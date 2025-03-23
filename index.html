@@ -17,12 +17,13 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: #f7f9fc;
+      background: linear-gradient(135deg, #e3fdfd, #ffe6fa);
     }
 
     .card {
       background: #ffffff;
-      width: 350px;
+      width: 90%;
+      max-width: 400px;
       border-radius: 15px;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
       text-align: center;
@@ -31,13 +32,13 @@
 
     .card h2 {
       font-size: 24px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       color: #333;
     }
 
     .card p {
       font-size: 16px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       color: #555;
     }
 
@@ -67,11 +68,49 @@
       transform: scale(1.05);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 20px;
+      }
+
+      .card h2 {
+        font-size: 20px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+
+      .button {
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .card {
+        padding: 40px;
+      }
+
+      .card h2 {
+        font-size: 26px;
+      }
+
+      .card p {
+        font-size: 18px;
+      }
+
+      .button {
+        font-size: 20px;
+      }
+    }
   </style>
-   <div class="card">
+</head>
+<body>
+  <div class="card">
     <h2>Join Our Community</h2>
-    <p>Stay connected with us by joining our WhatsApp and Telegram groups for updates and discussions!</p>
-    <a href="https://whatsapp.com/channel/0029VaXNXVCJf05TommxYk42" class="button whatsapp" target="_blank">Join WhatsApp Group</a>
+    <p>Stay connected with us by joining our WhatsApp and Telegram groups for real-time updates and discussions!</p>
+    <a href="https://chat.whatsapp.com/YourGroupLinhttps://whatsapp.com/channel/0029VaXNXVCJf05TommxYk42k" class="button whatsapp" target="_blank">Join WhatsApp Group</a>
     <a href="https://t.me/+cILgZFPn5R0wMTE1" class="button telegram" target="_blank">Join Telegram Group</a>
   </div>
 </body>
